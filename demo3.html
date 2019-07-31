@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>三角形/平行四边形</title>
+    <style>
+      .triangle-warp {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 0;
+        height: 0;
+        border-width: 100px;
+        border-style: solid;
+        border-color: red green blue brown;
+
+        /* border-color: red transparent transparent transparent; */
+      }
+
+      /* 各种三角形 */
+      .triangle {
+        position: absolute;
+        top: 50px;
+        left: 700px;
+        width: 0;
+        height: 0;
+        border-width: 100px;
+        border-style: solid;
+        border-color: red transparent transparent transparent;
+      }
+
+      /* 平行四边形 */
+      .rhomboid {
+        position: absolute;
+        top: 40px;
+        left: 300px;
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        transform: skew(-30deg);
+      }
+
+      /* 菱形 */
+      .rhombus {
+        position: absolute;
+        top: 50px;
+        left: 500px;
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        transform: rotate(30deg);
+      }
+      .rhombus:hover {
+        transform: rotate(30deg) scale(1.2);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="triangle-warp"></div>
+    <!-- 平行四边形 -->
+    <div class="rhomboid"></div>  
+    <!-- 菱形 -->
+    <div class="rhombus"></div>
+    <!-- 三角形 -->
+    <div class="triangle"></div>
+  </body>
+</html>
